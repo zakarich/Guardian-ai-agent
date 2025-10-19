@@ -1,0 +1,8 @@
+# Expo / React Native ignore
+node_modules
+.env
+.env.*
+ios/Pods
+android/.gradle
+android/app/build
+

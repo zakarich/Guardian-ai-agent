@@ -1,0 +1,66 @@
+{
+  "expo": {
+    "name": "Guardian AI",
+    "slug": "guardian-privacy-interprets",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+
+    "scheme": "guardian",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+
+    "ios": {
+      "bundleIdentifier": "com.zakariyaechatri.guardianai",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSMicrophoneUsageDescription": "Guardian AI needs microphone access to listen and provide real-time guidance.",
+        "NSSpeechRecognitionUsageDescription": "Guardian AI uses speech recognition to understand conversations.",
+        "UIBackgroundModes": ["audio"]
+      }
+    },
+
+    "android": {
+      "package": "com.zakariyaechatri.guardianai",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true
+    },
+
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "favicon": "./assets/images/favicon.png"
+    },
+
+    "plugins": [
+      "expo-router",
+      "expo-dev-client",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Guardian AI needs microphone access to listen and provide real-time guidance."
+        }
+      ]
+    ],
+
+    "experiments": {
+      "typedRoutes": true
+    },
+
+    "runtimeVersion": {
+      "policy": "sdkVersion"
+    }
+  }
+}

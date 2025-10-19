@@ -1,0 +1,36 @@
+name: Preflight environment check
+
+on:
+  pull_request:
+  push:
+    branches: [ main ]
+
+jobs:
+  preflight-macos:
+    name: Preflight — macOS
+    runs-on: macos-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Make checker executable
+        run: chmod +x ./scripts/check-env.sh
+
+      - name: Run environment checker
+        run: ./scripts/check-env.sh
+
+  preflight-ubuntu:
+    name: Preflight — Ubuntu
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install bash globstar support
+        run: sudo apt-get update && sudo apt-get install -y bash
+
+      - name: Make checker executable
+        run: chmod +x ./scripts/check-env.sh
+
+      - name: Run environment checker
+        run: ./scripts/check-env.sh
