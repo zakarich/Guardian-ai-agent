@@ -2,11 +2,11 @@
 
 <p align="center">
   <picture>
-    <img src="IMG_001.PNG" alt="Guardian AI Main Screen" width="250" style="border-radius:8px; padding:5px;" />
+    <img src="IMG_001.png" alt="Guardian AI Main Screen" width="250" style="border-radius:8px; padding:5px;" />
   </picture>
   <span style="display:inline-block; width:30px;"></span>
   <picture>
-    <img src="IMG_002.PNG" alt="Privacy & Control Settings" width="250" style="border-radius:8px; padding:5px;" />
+    <img src="IMG_002.png" alt="Privacy & Control Settings" width="250" style="border-radius:8px; padding:5px;" />
   </picture>
 </p>
 
