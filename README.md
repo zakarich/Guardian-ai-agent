@@ -1,9 +1,13 @@
 # Guardian AI - Privacy-Preserving Real-Life Interpreter
 
 <p align="center">
-  <img src="IMG_6370.PNG" alt="Guardian AI Main Screen" width="250" style="border-radius:8px; margin:10px;"/>
-  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <img src="IMG_6369.PNG" alt="Privacy & Control Settings" width="250" style="border-radius:8px; margin:10px;"/>
+  <picture>
+    <img src="IMG_001.PNG" alt="Guardian AI Main Screen" width="250" style="border-radius:8px; padding:5px;" />
+  </picture>
+  <span style="display:inline-block; width:30px;"></span>
+  <picture>
+    <img src="IMG_002.PNG" alt="Privacy & Control Settings" width="250" style="border-radius:8px; padding:5px;" />
+  </picture>
 </p>
 
 A cross-platform AI companion app that listens locally, understands conversations, and provides intelligent guidance while respecting your privacy.
